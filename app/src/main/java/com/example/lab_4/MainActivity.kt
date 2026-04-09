@@ -28,6 +28,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         previewView = findViewById(R.id.previewView)
+        previewView.scaleType = PreviewView.ScaleType.FILL_CENTER
         overlayView = findViewById(R.id.trackingOverlayView)
 
         if (allPermissionsGranted()) {
